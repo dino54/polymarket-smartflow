@@ -1,0 +1,2 @@
+[console_scripts]
+pmsf = pmsf.cli:main
