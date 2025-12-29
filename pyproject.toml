@@ -1,0 +1,19 @@
+[project]
+name = "pmsf"
+version = "0.1.0"
+description = "Polymarket Smart Flow (LMDB) - local-first tracker + scoring + alerts"
+requires-python = ">=3.10"
+dependencies = [
+  "httpx>=0.27.0",
+  "websockets>=13.0",
+  "lmdb>=1.5.1",
+  "orjson>=3.10.7",
+  "rich>=13.7.1",
+  "python-dotenv>=1.0.1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.scripts]
+pmsf = "pmsf.cli:main"
